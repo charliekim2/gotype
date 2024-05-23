@@ -13,9 +13,8 @@ type model struct {
 	state    State
 	settings Settings
 
-	menu    tea.Model
-	game    tea.Model
-	restuls tea.Model
+	menu tea.Model
+	game tea.Model
 }
 
 // Placeholder for now - use termenv for themeing (colors, font style, etc)
@@ -25,13 +24,6 @@ type Theme struct {
 
 type Menu struct {
 	selected MenuItem
-}
-
-type Game struct {
-	words       []string
-	currentWord int
-	time        int
-	wpm         float32
 }
 
 type Results struct {
